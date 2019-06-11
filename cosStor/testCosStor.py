@@ -1,13 +1,14 @@
 # -*- coding: utf8 -*-
 
 
-appid = 'your appid'
-secret_id = 'your secret id'
-secret_key = 'your secret key'
+appid = 'test appid'
+secret_id = 'test id'
+secret_key = 'test key'
+
 
 from cosStor import cosStor
 
-client = cosStor(secretId=secret_id,secretKey=secret_key,appid=appid)
+client = cosStor(cosBucket="testbucket",secretId=secret_id,secretKey=secret_key,appid=appid)
 
 client.flush()
 
